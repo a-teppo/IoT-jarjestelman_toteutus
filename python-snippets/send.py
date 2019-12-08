@@ -35,4 +35,4 @@ def handledata(found_data):
 mac = '22:22:22:22:22:22' #tähän oma ruuvitag mac-osoite
 
 #macs = ['11:11:11:11:11:11','00:00:00:00:00:00']
-RuuviTagSensor.get_datas(handledata, macs, run_flag)
+RuuviTagSensor.get_datas(handledata, mac, run_flag)
