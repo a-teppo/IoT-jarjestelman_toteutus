@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="inc/script.js"></script>
+  </head>
+  <body>
+    <header class="nav">
+      <section>
+        <h1>jonkun ruuvitagi</h1>
+      </section>
+      <select>
+        <option value="yksi">yksi</option>
+        <option value="yksi">kaksi</option>
+        <option value="yksi">kolme</option>
+      </select>
+    </header>
+    <main class="container__weather">
+        <section class="item__b">
+          <header class="temp">
+            <div>
+            <p>H 100C</p>
+            <p>L 20C</p>
+          </div>
+            <h1>80C</h1>
+          </header>
+        </section>
+        <section class="item__a">
+          <p class="humidity">65 %</p>
+          <p class="pressure">236</p>
+          <canvas id="chart"></canvas>
+        </section>
+      <!-- <section class="container__sidebar">
+            <a href="#" class="nav__link">etusivu</a>
+            <a href="#" class="nav__link">jotain</a>
+            <a href="#" class="nav__link">jotain2</a>
+          </section> -->
+    </main>
+  </body>
+</html>
