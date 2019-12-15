@@ -9,19 +9,20 @@ def handledata(found_data):
 
     mac = found_data[0]
 
- #   mulla on kaks ruuvitagia niin ne tulee sit erikseen tässä
- #
- #   if found_data[0] is '00:00:00:00:00:00':
- #       mac = 1
- #   elif found_data[0] is '11:11:11:11:11:11':
- #       mac = 2
+#   mulla on kaks ruuvitagia niin ne tulee sit erikseen tässä
+#
+#   if found_data[0] == '00:00:00:00:00:00':
+#       mac = 1
+#   elif found_data[0] == '11:11:11:11:11:11':
+#       mac = 2
 
     data = found_data[1]
 
     url = "http://51.83.73.200/iot/sensordata.php"
     info = {'user': 'oma_käyttis', 'pass': 'oma_salasana', 'deviceid': mac, 'temperature': data['temperature'], 'humidity': data['humidity'], 'pressure': data['pressure']}
+    r = requests.post(url=url, data=info)
 
-#    print(info)
+    print(r.text)
 
     global counter
     counter = counter - 1
