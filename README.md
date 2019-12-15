@@ -9,7 +9,7 @@ $ python3 send.py
 ```
 $ crontab -e
 ```
-lisää tiedoston loppuun
+lisää tiedoston loppuun (vaihda kansio-polku sinne, missä tiedosto sijaitsee)
 ```
 */40 * * * * python3 /home/user/send.py
 ```
