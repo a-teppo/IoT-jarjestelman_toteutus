@@ -11,5 +11,5 @@ $ crontab -e
 ```
 lisää tiedoston loppuun
 ```
-*\40 * * * * python3 /home/user/send.py
+*/40 * * * * python3 /home/user/send.py
 ```
