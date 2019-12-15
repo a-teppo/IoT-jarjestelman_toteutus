@@ -21,7 +21,7 @@ def handledata(found_data):
   #  temp = data['temperature']
 
     url = "http://51.83.73.200/iot/sensordata.php"
-    info = { 'user':'oma_käyttis', 'pass':'oma_salasana', 'deviceid':mac, 'temperature': data['temperature'], 'humidity': data['humidity'], 'pressure': data['pressure'] }
+    info = { 'user':'oma_käyttis', 'pass':'oma_salasana', 'id':mac, 'temperature': data['temperature'], 'humidity': data['humidity'], 'pressure': data['pressure'] }
 #    r  = requests.post(url=url, data=info)
 
     print(info)
