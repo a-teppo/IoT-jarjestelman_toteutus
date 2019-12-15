@@ -22,7 +22,8 @@ def handledata(found_data):
     info = {'user': 'oma_käyttis', 'pass': 'oma_salasana', 'deviceid': mac, 'temperature': data['temperature'], 'humidity': data['humidity'], 'pressure': data['pressure']}
     r = requests.post(url=url, data=info)
 
-    print(r.text)
+    print(info)  # lähtevät tiedot
+    print(r.text, r.status_code, r.reason)  # serverin vastaus
 
     global counter
     counter = counter - 1
